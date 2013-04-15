@@ -1,0 +1,24 @@
+@mixin border-radius ($values) {
+  @include prefixer(border-radius, $values, moz o webkit w3c);
+}
+
+@mixin box-shadow ($values...) {
+  @include prefixer(box-shadow, $values, webkit w3c);
+  -webkit-appearance: none;
+}
+
+@mixin transform ($values) {
+  @include prefixer(transform, $values, moz o webkit ms w3c);
+}
+
+@mixin transition ($values...) {
+  @include prefixer(transition, $values, moz o webkit ms w3c)
+}
+
+@mixin transition-delay ($values...) {
+  @include prefixer(transition-delay, $values, moz webkit w3c);
+}
+
+@mixin transition-duration ($values...) {
+  @include prefixer(transition-duration, $values, moz webkit w3c);
+}

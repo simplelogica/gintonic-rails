@@ -1,0 +1,22 @@
+@mixin prefixer ($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == o {
+      -o-#{$property}: $value;
+    }
+    @else if $prefix == w3c {
+      #{$property}: $value;
+    }
+    @else {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
