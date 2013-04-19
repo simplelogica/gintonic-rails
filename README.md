@@ -1,20 +1,20 @@
 # Gintonic::Rails
 
-TODO: Write a gem description
+A lightweight sass mixins library to make easy front-end rails developers.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Just this line to your application's Gemfile:
 
     gem 'gintonic-rails'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+You are ready to import gintonic at the beginnign of application.css.scss:
 
-    $ gem install gintonic-rails
+    @import "gintonic";
 
 ## Usage
 
