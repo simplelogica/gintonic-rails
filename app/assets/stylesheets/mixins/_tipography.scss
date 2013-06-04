@@ -17,3 +17,10 @@
          font-url('#{$file-path}.svg##{$font-family}') format('svg');
   }
 }
+
+@mixin hide-text {
+  display: block;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+}
