@@ -1,5 +1,5 @@
-@include "utils/normalize"
-@include "utils/functions"
-@include "mixins/blocks"
-@include "mixins/css3"
-@include "mixins/tipography"
+@import "utils/normalize";
+@import "utils/functions";
+@import "mixins/blocks";
+@import "mixins/css3";
+@import "mixins/tipography";
