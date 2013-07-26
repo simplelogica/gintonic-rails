@@ -4,7 +4,7 @@ A lightweight sass mixins library to make easy front-end rails developers.
 
 ## Installation
 
-Just this line to your application's Gemfile:
+Just add this line to assets group in your application's Gemfile:
 
     gem 'gintonic-rails'
 
