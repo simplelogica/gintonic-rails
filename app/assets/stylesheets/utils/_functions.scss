@@ -1,3 +1,7 @@
+/* Example:
+ * @include prefixer(border-radius, $values, moz o webkit w3c);
+ */
+
 @mixin prefixer ($property, $value, $prefixes) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
