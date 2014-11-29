@@ -8,12 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Gintonic::Rails::VERSION
   gem.authors       = ["Victor Ortiz"]
   gem.email         = ["kespers@gmail.com"]
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/simplelogica/gintonic-rails"
   gem.summary       = "Gintonic Front-End toolbox"
-  gem.description   = <<-DESC
-  Gintonic is a Sass mixins collection, include normalize 2.1 modified, clearfix, font-face helper and CSS3 properties with vendor prefixes Webkit, Firefox > 3.5, Opera and IE > 8.
-  DESC
-
+  gem.description   = %q{Gintonic is a Sass mixins collection, include normalize 2.1 modified, clearfix, font-face helper and CSS3 properties with vendor prefixes Webkit, Firefox > 3.5, Opera and IE > 8.}
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})

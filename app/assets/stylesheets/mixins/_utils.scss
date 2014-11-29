@@ -18,12 +18,8 @@
   }
 }
 
-@mixin hide-text($background, $width, $height) {
-  display: block;
-  text-indent: 150%;
-  white-space: nowrap;
-  overflow: hidden;
-  background: $background;
-  width: $width;
-  height: $height;
+@mixin media($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
 }
