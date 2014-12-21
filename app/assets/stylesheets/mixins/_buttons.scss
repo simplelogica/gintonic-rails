@@ -1,0 +1,50 @@
+// Buttons generator
+// * style: default / inverse
+// * size: default / medium/  slim
+
+@mixin btn($color: $blue, $style: "default", $size: "default" ) {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  @include transition(all 0.3s ease);
+  &:hover {
+    text-decoration: none;
+  }
+  @if $style == "inverse" {
+    color: $color;
+    background: #FFF;
+    border-color: $color;
+    &:hover {
+      color: #FFF;
+      background: $color;
+      border-color: #FFF;
+    }
+  } @else if $style == "hollow" {
+    color: $color;
+    background: transparent;
+    border-color: $color;
+    &:hover {
+      color: #fff;
+      background: $color;
+      border-color: transparent;
+    }
+  } @else {
+    color: #FFF;
+    background: $color;
+    border-color: #FFF;
+    &:hover {
+      color: $color;
+      background: #FFF;
+      border-color: $color;
+    }
+  }
+  @if $size == "slim" {
+    border-radius: 18px;
+    padding: 7px 20px;
+  } @else if $size == "medium" {
+    padding: 10px 28px;
+  } @else  {
+    padding: 12px 35px;
+  }
+}

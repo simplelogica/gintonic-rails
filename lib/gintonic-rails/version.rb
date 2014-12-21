@@ -1,6 +1,5 @@
 module Gintonic
   module Rails
-    VERSION = "0.0.3"
-    NORMALIZE_VERSION = "3.0.2"
+    VERSION = "0.1.0"
   end
 end
