@@ -1,0 +1,11 @@
+Description:
+  Creates a default js dir structure
+
+Example:
+  rails generate gintonic:js
+
+  This will create:
+    app/assets/js/libs/.keep
+    app/assets/js/modules/.keep
+    app/assets/js/ready.js
+    app/assets/js/application.js
