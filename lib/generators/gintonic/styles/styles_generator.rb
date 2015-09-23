@@ -12,7 +12,7 @@ class Gintonic::StylesGenerator < Rails::Generators::Base
 
   def copy_application_css
     template 'application.css',
-      File.join(destination_root, 'app/assets/stylesheets/application.css')
+      File.join(destination_root, 'app/assets/stylesheets/application.scss')
   end
 
   def install_quite_assets
