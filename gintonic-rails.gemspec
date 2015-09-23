@@ -7,7 +7,7 @@ require 'gintonic-rails/version'
 Gem::Specification.new do |gem|
   gem.name          = "gintonic-rails"
   gem.version       = Gintonic::Rails::VERSION
-  gem.authors       = ["Victor Ortiz"]
+  gem.authors       = ["Simplelogica", "Victor Ortiz"]
   gem.email         = ["kespers@gmail.com"]
   gem.homepage      = "https://github.com/simplelogica/gintonic-rails"
   gem.summary       = "Gintonic Front-End toolbox"
