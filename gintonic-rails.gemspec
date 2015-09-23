@@ -15,6 +15,7 @@ Gem::Specification.new do |gem|
 
   gem.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
-  gem.add_dependency "railties", "~> 4.0"
-  gem.add_dependency 'sass', '~> 3.2'
+  gem.add_dependency "railties", ">= 4.2"
+  gem.add_dependency 'sass-rails', '>= 4.0'
+  gem.add_dependency 'bourbon', '>= 4.2'
 end
