@@ -1,0 +1,12 @@
+Description:
+  Creates a default stylesheets dir structure
+
+Example:
+  rails generate gintonic:styles
+
+  This will create:
+    app/assets/stylesheets/base/.keep
+    app/assets/stylesheets/libs/.keep
+    app/assets/stylesheets/pages/.keep
+    app/assets/stylesheets/partials/.keep
+    app/assets/stylesheets/application.scss
