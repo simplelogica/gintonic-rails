@@ -2,12 +2,14 @@ class Gintonic::StylesGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
 
   def create_structure
-    create_file "app/assets/stylesheets/base/_layout.scss", ""
-    create_file "app/assets/stylesheets/base/_typography.scss", ""
-    create_file "app/assets/stylesheets/base/_variables.scss", ""
+    create_file "app/assets/stylesheets/base/_3_layout.scss", ""
+    create_file "app/assets/stylesheets/base/_2_typography.scss", ""
+    create_file "app/assets/stylesheets/base/_1_variables.scss", ""
     create_file "app/assets/stylesheets/libs/.keep", ""
     create_file "app/assets/stylesheets/pages/.keep", ""
     create_file "app/assets/stylesheets/partials/.keep", ""
+    create_file "app/assets/stylesheets/elements/.keep", ""
+    create_file "app/assets/stylesheets/blocks/.keep", ""
   end
 
   def copy_application_css

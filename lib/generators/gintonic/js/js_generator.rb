@@ -4,6 +4,7 @@ class Gintonic::JsGenerator < Rails::Generators::Base
   def create_structure
     create_file "app/assets/javascripts/libs/.keep", ""
     create_file "app/assets/javascripts/modules/.keep", ""
+    create_file "app/assets/javascripts/blocks/.keep", ""
   end
 
   def copy_ready_js
