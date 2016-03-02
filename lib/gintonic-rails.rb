@@ -1,4 +1,5 @@
-require "gintonic-rails/version"
+require 'gintonic-rails/version'
+require 'bourbon'
 
 unless defined?(Sass)
   require 'sass'
