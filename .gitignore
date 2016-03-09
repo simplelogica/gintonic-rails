@@ -17,4 +17,4 @@ test/version_tmp
 tmp
 test/dummy/log/development.log
 test/dummy/log/test.log
-test/dummy/db/development.sqlite3
+test/dummy/db/*.sqlite3
