@@ -19,4 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency("sass", "~> 3.4")
   gem.add_dependency("bourbon", ">= 4.2")
+
+  gem.add_development_dependency "rails", ">= 4.1.5"
+  gem.add_development_dependency "sqlite3"
 end
