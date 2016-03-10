@@ -1,0 +1,8 @@
+html {
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *, *:after, *:before {
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
