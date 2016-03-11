@@ -1,8 +1,11 @@
 @import "bourbon";
 
+@import "dom-limpio/variables";
+@import "dom-limpio/layout";
+@import "dom-limpio/type";
+@import "dom-limpio/forms";
+
 @import "gintonic/base/vars";
 @import "gintonic/base/utils";
 
-@import "gintonic/reset/layout";
-@import "gintonic/reset/typography";
 @import "gintonic/modules/buttons";
