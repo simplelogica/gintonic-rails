@@ -1,0 +1,37 @@
+@mixin columns($columns, $container-columns: $g-grid-columns, $display: block) {
+  $width: $columns * $g-grid-max-width / $g-grid-columns + ($columns - 1) * $g-grid-gutter;
+  $container-width: $container-columns * $g-grid-max-width / $g-grid-columns + ($container-columns - 1) * $g-grid-gutter;
+
+  @if $g-grid-gutter > 0 {
+    @include calc(width, "#{percentage($width / $container-width)} - #{$g-grid-gutter/2}");
+  } @else {
+    width: percentage($width / $container-width);
+  }
+
+  @if $display == inline-block {
+    display: inline-block;
+    margin-left: $g-grid-gutter/2;
+    @if $g-grid-gutter > 0 {
+      @include calc(margin-right, "#{$g-grid-gutter/2} - 0.285em");
+    } @else {
+      margin-right: -0.285em;
+    }
+  } @else {
+    float: left;
+    margin-right: $g-grid-gutter/2;
+    margin-left: $g-grid-gutter/2;
+  }
+}
+
+@mixin wrapper($full-bg: false) {
+  @include clearfix;
+  max-width: $g-grid-max-width;
+  @if $full-bg == true {
+    box-sizing: content-box;
+    @include calc(padding-left, "50% - #{$g-grid-max-width/2}");
+    @include calc(padding-right, "50% - #{$g-grid-max-width/2}");
+  } @else {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

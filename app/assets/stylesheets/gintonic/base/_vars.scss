@@ -2,3 +2,8 @@
 $g-mq-mobile: 767px;
 $g-mq-tablet: 1024px;
 $g-mq-small-desktop: 1200px;
+
+// Grid
+$g-grid-max-width: 1200px !default;
+$g-grid-columns: 12 !default;
+$g-grid-gutter: 0 !default;

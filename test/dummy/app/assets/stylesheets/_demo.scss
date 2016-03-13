@@ -1,0 +1,29 @@
+// $g-grid-gutter: 0;
+.row {
+  background: #f1f1f1;
+  @include wrapper();
+  margin-bottom: $g-grid-gutter;
+}
+
+.col {
+  background: cyan;
+  text-align: center;
+  border: 1px solid;
+  padding: $g-grid-gutter;
+}
+
+.col3 {
+  @include columns(3);
+}
+
+.col4 {
+  @include columns(4);
+}
+
+.col5 {
+  @include columns(5);
+}
+
+.col6 {
+  @include columns(6);
+}
