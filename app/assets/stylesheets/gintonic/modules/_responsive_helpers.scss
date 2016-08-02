@@ -18,7 +18,7 @@
 //
 // Tablet
 //
-@media only screen and (max-device-width: $g-mq-tablet) {
+@media only screen and (max-width: $g-mq-tablet) {
   .responsive-only,
   .tablet-only {
     display: block !important;
@@ -33,7 +33,7 @@
 //
 // Mobile
 //
-@media only screen and (max-device-width: $g-mq-mobile) {
+@media only screen and (max-width: $g-mq-mobile) {
   .responsive-only,
   .mobile-only {
     display: block !important;
