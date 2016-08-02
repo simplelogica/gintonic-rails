@@ -1,0 +1,46 @@
+//
+// Responsive helpers
+//
+
+.hide-on-desktop,
+.responsive-only, // Both tablet + mobile
+.tablet-only,
+.mobile-only {
+  display: none !important;
+}
+.desktop-only,
+.hide-on-responsive, // Both tablet + mobile
+.hide-on-tablet,
+.hide-on-mobile {
+  // Default visible
+}
+
+//
+// Tablet
+//
+@media only screen and (max-device-width: $g-mq-tablet) {
+  .responsive-only,
+  .tablet-only {
+    display: block !important;
+  }
+  .desktop-only,
+  .hide-on-responsive,
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+//
+// Mobile
+//
+@media only screen and (max-device-width: $g-mq-mobile) {
+  .responsive-only,
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only,
+  .hide-on-responsive,
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
