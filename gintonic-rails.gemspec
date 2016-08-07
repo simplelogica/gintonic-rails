@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency("sass", "~> 3.4")
   gem.add_dependency("bourbon", ">= 4.2")
+  gem.add_dependency("mqbe", ">= 2.0")
   gem.add_dependency("dom_limpio", ">= 0.1")
 
   gem.add_development_dependency "rails", ">= 4.1.5"
