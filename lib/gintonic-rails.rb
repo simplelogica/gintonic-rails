@@ -1,5 +1,6 @@
 require 'gintonic-rails/version'
 require 'bourbon'
+require 'dom_limpio'
 
 unless defined?(Sass)
   require 'sass'
