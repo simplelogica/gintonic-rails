@@ -2,23 +2,24 @@
 
   $.gTabs = function(el) {
     var plugin = this,
-        $el = $(el);
+        $menu = $(el);
 
-    this.$el = $el;
+    this.$el = $menu;
 
-    $el.data('g-tabs', plugin);
+    $menu.data('g-tabs', plugin);
 
 
     plugin.init = function() {
-      var $active_el = $el.find('.g-tab-nav.active');
+      var $active_el = $menu.find('.g-tab-nav.active');
 
       if ($active_el.length === 1) {
         plugin.activate_tab($active_el);
       } else {
-        plugin.activate_tag($el.find('.g-tab-nav').first());
+        plugin.activate_tag($menu.find('.g-tab-nav').first());
       }
 
-      $el.on('click', '.g-tab-nav', function() {
+      $menu.on('click', '.g-tab-nav', function(e) {
+        e.preventDefault();
         plugin.activate_tab($(this));
       });
     };
@@ -28,8 +29,8 @@
           $fk_selects = $target.find('.has-fk-select');
 
       // Activate nav
-      $nav.addClass('active')
-          .siblings('.g-tab-nav').removeClass('active');
+      $menu.find('.g-tab-nav').removeClass('active');
+      $nav.addClass('active');
 
       // Activate element
       $target.addClass('active')
