@@ -1,4 +1,4 @@
 // Media Queries Breakpoints
-$g-mq-mobile: 767px;
-$g-mq-tablet: 1023px;
-$g-mq-small-desktop: 1200px;
+$g-mq-mobile: 767px !default;
+$g-mq-tablet: 1024px !default;
+$g-mq-small-desktop: 1200px !default;
